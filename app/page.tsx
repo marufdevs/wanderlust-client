@@ -1,15 +1,19 @@
-import { HomeHeroBanner } from "@/components/home-hero-banner"
-import { NavBar } from "@/components/nav-bar"
-import { TestimonialCarousel } from "@/components/testimonial-carousel"
-import { WhyChoos } from "@/components/why-choos"
+import { CallToAction } from "@/components/Home/call-to-action"
+
+import { HomeHeroBanner } from "@/components/Home/home-hero-banner"
+
+import { TestimonialCarousel } from "@/components/Home/testimonial-carousel"
+import { WhyChoos } from "@/components/Home/why-choos"
 
 export default function Page() {
   return (
     <main className="min-h-svh bg-white">
-      <NavBar />
+      
       <HomeHeroBanner />
       <WhyChoos />
       <TestimonialCarousel />
+      <CallToAction />
+      
     </main>
   )
 }
